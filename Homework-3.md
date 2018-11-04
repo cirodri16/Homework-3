@@ -70,7 +70,7 @@ Result:
 ```
 1870
 ```
-
+##### There are 143726002 nucleotides, 1152978 Ns, 1870 of sequences in the whole genome.
 ## Exercise 2
 ## Summarize an annotation file
 >Go to the most current download genomes section at flybase.org and download the gzipped gtf annotation file for D. melanogaster.
@@ -134,11 +134,11 @@ Results:
 > 2.Total number of genes per chromosome arm (X, Y, 2L, 2R, 3L, 3R, 4)
 ### ANSWER:
 ```
-#to get columns 1 and 3:
+#to get columns 1 and 3 containing the features and the chromosome labels out of the gtf file:
 awk '{print $1, $3}' dmel-all-r6.24.gtf >unsorted_featurelist1_3.txt
 ```
 ```
-#To get the genes per chromosome arm use a regular expression in grep -w:
+#To get the genes per chromosome arm use a regular expression in grep -w and sort it numerically by gene name :
 grep -w [XY234][LR]* unsorted_featurelist1_3.txt \
 | grep -w gene \
 | sort -n \
@@ -155,4 +155,4 @@ Results:
      6	   4202 3R gene
      7	    111 4 gene
 ```
-
+##### There are 2676 genes in the X chromosome, 113 genes in the Y chromosome, 3501 genes in the 2L chromosome, 3628 genes in the 2R chromosome, 3464 genes in the 3L chromosome, 4202 genes in the 3R chromosome, and 111 genes in the 4 chromosome.
