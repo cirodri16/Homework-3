@@ -156,3 +156,7 @@ Results:
      7	    111 4 gene
 ```
 ##### There are 2676 genes in the X chromosome, 113 genes in the Y chromosome, 3501 genes in the 2L chromosome, 3628 genes in the 2R chromosome, 3464 genes in the 3L chromosome, 4202 genes in the 3R chromosome, and 111 genes in the 4 chromosome.
+
+### Comments on "Summarize an annotation file"
+
+Perfect!
